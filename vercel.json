@@ -1,6 +1,11 @@
 {
-  "framework": "vite",
-  "installCommand": "npm ci --no-audit --no-fund",
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "installCommand": "echo skip install",
+  "buildCommand": "echo skip build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
