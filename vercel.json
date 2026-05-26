@@ -1,7 +1,7 @@
 {
   "framework": "vite",
-  "installCommand": "corepack enable && corepack prepare pnpm@9.15.9 --activate && pnpm install --no-frozen-lockfile",
-  "buildCommand": "corepack enable && pnpm run build",
+  "installCommand": "npm install --package-lock=false --no-audit --no-fund",
+  "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "rewrites": [
     {
